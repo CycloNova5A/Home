@@ -128,7 +128,7 @@ body.loaded #content {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),
               url('hero-bg.jpg') center/cover no-repeat;
   color: white;
-  height: 85vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
