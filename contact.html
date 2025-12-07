@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Cyclonova</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOADER -->
+  <div id="loader">
+    <img src="logo.png" alt="Cyclonova Logo" class="logo-spin">
+    <div class="cover top"></div>
+    <div class="cover bottom"></div>
+  </div>
+
+  <!-- CONTENU -->
+  <div id="content">
+    <header class="navbar">
+      <div class="container nav-content">
+        <a href="index.html" class="logo-container">
+          <img src="logo.png" alt="Logo Cyclonova" class="logo-img">
+          <h1 class="logo-text">Cyclonova</h1>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="contact-section">
+      <h2>Formulaire de recyclage</h2>
+      <p>Merci de remplir ce formulaire pour nous transmettre vos informations de recyclage.</p>
+
+      <form action="https://formspree.io/f/mblnajpk" method="POST" class="contact-form">
+        <label for="entreprise">Nom de l’entreprise</label>
+        <input type="text" id="entreprise" name="entreprise" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="type_plastique">Type de plastique</label>
+        <select id="type_plastique" name="type_plastique" required>
+          <option value="PLA">PLA</option>
+          <option value="ABS">ABS</option>
+          <option value="PETG">PETG</option>
+          <option value="Nylon">Nylon</option>
+        </select>
+
+        <label for="poids">Poids envoyé (kg)</label>
+        <input type="number" id="poids" name="poids" step="0.01" required>
+
+        <label for="message">Message (optionnel)</label>
+        <textarea id="message" name="message" rows="4" placeholder="Informations complémentaires..."></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Cyclonova - Pour un monde meilleur </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
